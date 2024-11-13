@@ -4,3 +4,9 @@
 0 - For gun
 
 """
+import random
+
+def computerChoice(): 
+    return random.choice([0, 1, -1])
+
+
