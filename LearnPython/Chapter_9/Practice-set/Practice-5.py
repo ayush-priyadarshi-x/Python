@@ -4,5 +4,7 @@ with open("vulgur.txt", "r+") as f:
     for vulgurWord in vulgurWords: 
         if vulgurWord.upper() in content.upper(): 
             f.seek(0)
-            content = content.replace(vulgurWord, "****")        
+            content = content.replace(vulgurWord,len(vulgurWord) * "#")        
             f.write(content)
+
+    f.truncate()
