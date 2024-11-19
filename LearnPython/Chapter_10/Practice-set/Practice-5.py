@@ -1,3 +1,4 @@
+from random import randint
 class Train:
     trainStatus = {"information": "No information yet !"}
     noOfSeats = 100
@@ -7,6 +8,10 @@ class Train:
 
     def bookTickets(self): 
         return "Ticket booked!" if self.bookTicket else "Ticket wasn't booked."
+
+    @staticmethod
+    def bookedSeat(): 
+        return randint(255, 555)
 
     def trailInfo(self): 
         return self.__class__.trainStatus  # Accessing the class attribute
@@ -18,4 +23,6 @@ myTicket = Train(True)
 print(f"Book tickets status: {myTicket.bookTicket} \n"
       f"Number of seats: {Train.noOfSeats} \n"
       f"\t{myTicket.bookTickets()} \n"
-      f"\t{myTicket.trailInfo()}")
+      f"\t{myTicket.trailInfo()}"
+      f"\t{myTicket.bookedSeat()}"
+      )
