@@ -1,0 +1,11 @@
+Overview:
+1. Tensor Basics 
+        ○ Create, Operations, NumPy, GPU Support
+2. Autograd
+        ○ Linear regression example
+3. Training Loop with: Model, Loss & Optimizer
+        ○ A typical PyTorch training pipeline
+4. Neural Network
+        ○ Also: GPU, Datasets, DataLoader, Transforms & Evaluation
+5. Convolutional Neural Network
+        ○ Also: Save/Load model
